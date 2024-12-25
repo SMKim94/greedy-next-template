@@ -1,3 +1,5 @@
+// https://tailwindcss.com/docs/installation/using-postcss
+
 import type { Config } from 'tailwindcss';
 
 export default {
