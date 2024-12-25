@@ -1,0 +1,41 @@
+{
+  "name": "my-chatgpt",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "postinstall": "husky install",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "prettier": "prettier --cache --write .",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "next": "15.1.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.2",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.11",
+    "postcss": "^8.4.49",
+    "prettier": "3.4.2",
+    "prettier-plugin-tailwindcss": "^0.6.9",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=22",
+    "pnpm": ">=9.15"
+  }
+}
