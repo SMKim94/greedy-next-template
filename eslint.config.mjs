@@ -19,12 +19,14 @@ const eslintConfig = [
   {
     ignores: [
       'node_modules/',
+      'pnpm-lock.yaml',
       'build/',
-      'coverage/',
       '.next/',
+      'coverage/',
+      'tests/e2e/playwright-report',
+      'tests/e2e/test-results',
       '.git/',
       '.gitignore',
-      'pnpm-lock.yaml',
       'README.md',
     ],
   },
