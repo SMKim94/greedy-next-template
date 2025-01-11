@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint .",
     "prettier": "prettier --cache --write .",
-    "prepare": "husky"
+    "prepare": "husky",
+    "test:e2e": "pnpm exec playwright test"
   },
   "dependencies": {
     "@next/env": "^15.1.4",
