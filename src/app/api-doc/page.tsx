@@ -1,11 +1,11 @@
 import { getApiDocs } from '@/lib/swagger';
-import ReactSwagger from './react-swagger';
+import Swagger from './swagger';
 
 const Page = async () => {
   const spec = await getApiDocs();
   return (
     <section>
-      <ReactSwagger spec={spec} />
+      <Swagger spec={spec} />
     </section>
   );
 };
