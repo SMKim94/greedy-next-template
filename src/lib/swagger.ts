@@ -4,7 +4,7 @@ export const getApiDocs = async () => {
   const spec = createSwaggerSpec({
     apiFolder: 'src/app/api',
     definition: {
-      openapi: '3.0.0',
+      openapi: '3.1.1',
       info: {
         title: 'Next.js Swagger API Example',
         version: '1.0.0',

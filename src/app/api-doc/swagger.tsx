@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect } from 'react';
-import { SwaggerUIBundle, SwaggerUIStandalonePreset } from 'swagger-ui-dist';
+import { SwaggerUIBundle } from 'swagger-ui-dist';
 import 'swagger-ui-dist/swagger-ui.css';
 
 type Props = {
@@ -14,8 +14,6 @@ const Swagger = ({ spec }: Props) => {
     SwaggerUIBundle({
       spec,
       dom_id: '#swagger-ui',
-      presets: [SwaggerUIBundle.presets.apis, SwaggerUIStandalonePreset],
-      layout: 'StandaloneLayout',
     });
   }, []);
 
