@@ -1,3 +1,4 @@
+import MSWMockProvider from './_components/MSWMockProvider';
 import './globals.css';
 
 const RootLayout = ({
@@ -7,7 +8,9 @@ const RootLayout = ({
 }>) => {
   return (
     <html lang="ko">
-      <body>{children}</body>
+      <body>
+        <MSWMockProvider>{children}</MSWMockProvider>
+      </body>
     </html>
   );
 };

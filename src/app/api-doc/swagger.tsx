@@ -15,7 +15,7 @@ const Swagger = ({ spec }: Props) => {
       spec,
       dom_id: '#swagger-ui',
     });
-  }, []);
+  }, [spec]);
 
   return <div id="swagger-ui"></div>;
 };
