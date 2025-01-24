@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server';
+import type { NextRequest } from 'next/server';
 
-export const middleware = () => {
+export const middleware = (request: NextRequest) => {
+  console.log('[middleware]', request.nextUrl.pathname);
   return NextResponse.next();
 };
 
