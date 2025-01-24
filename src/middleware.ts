@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
-export const middleware = (request: NextRequest) => {
+export const middleware = async (request: NextRequest) => {
   console.log('[middleware]', request.nextUrl.pathname);
   return NextResponse.next();
 };
@@ -20,6 +20,6 @@ export const config = {
      * - _next/image (이미지 최적화 파일 경로)
      * - favicon.ico, sitemap.xml, robots.txt (메타데이터 파일)
      */
-    '/((?!_next/static|_next/image|favicon.ico|sitemap.xml|robots.txt).*)',
+    '/((?!_next/static|_next/image|favicon.ico|sitemap.xml|robots.txt|mockServiceWorker).*)',
   ],
 };
