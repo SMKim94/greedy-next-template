@@ -8,6 +8,8 @@ import prettierPlugin from 'eslint-plugin-prettier';
 import prettierBaseConfig from 'eslint-config-prettier';
 import prettierConfig from './.prettierrc.mjs';
 
+import reactQueryPlugin from '@tanstack/eslint-plugin-query';
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
@@ -43,6 +45,7 @@ const eslintConfig = [
       'prettier/prettier': ['error', prettierConfig],
     },
   },
+  ...reactQueryPlugin.configs['flat/recommended'],
 ];
 
 export default eslintConfig;

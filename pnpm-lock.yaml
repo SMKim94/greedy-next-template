@@ -10,6 +10,9 @@ importers:
       '@next/env':
         specifier: ^15.1.6
         version: 15.1.6
+      '@tanstack/react-query':
+        specifier: ^5.64.2
+        version: 5.64.2(react@19.0.0)
       jest-fixed-jsdom:
         specifier: ^0.0.9
         version: 0.0.9(jest-environment-jsdom@29.7.0)
@@ -41,6 +44,9 @@ importers:
       '@tailwindcss/postcss':
         specifier: ^4.0.0
         version: 4.0.0
+      '@tanstack/eslint-plugin-query':
+        specifier: ^5.64.2
+        version: 5.64.2(eslint@9.19.0(jiti@2.4.2))(typescript@5.7.3)
       '@testing-library/dom':
         specifier: ^10.4.0
         version: 10.4.0
@@ -1234,6 +1240,28 @@ packages:
       {
         integrity: sha512-lI2bPk4TvwavHdehjr5WiC6HnZ59hacM6ySEo4RM/H7tsjWd8JpqiNW9ThH7rO/yKtrn4mGBoXshpvn8clXjPg==,
       }
+
+  '@tanstack/eslint-plugin-query@5.64.2':
+    resolution:
+      {
+        integrity: sha512-Xq7jRYvNtGMHjQEGUZLHgEMNB59hgTlqdmKor6cdJ6CMZ/nwmBGpnlr/dcHden7W7BPCdBVN4PWMZBICWvCNQQ==,
+      }
+    peerDependencies:
+      eslint: ^8.57.0 || ^9.0.0
+
+  '@tanstack/query-core@5.64.2':
+    resolution:
+      {
+        integrity: sha512-hdO8SZpWXoADNTWXV9We8CwTkXU88OVWRBcsiFrk7xJQnhm6WRlweDzMD+uH+GnuieTBVSML6xFa17C2cNV8+g==,
+      }
+
+  '@tanstack/react-query@5.64.2':
+    resolution:
+      {
+        integrity: sha512-3pakNscZNm8KJkxmovvtZ4RaXLyiYYobwleTMvpIGUoKRa8j8VlrQKNl5W8VUEfVfZKkikvXVddLuWMbcSCA1Q==,
+      }
+    peerDependencies:
+      react: ^18 || ^19
 
   '@testing-library/dom@10.4.0':
     resolution:
@@ -6445,6 +6473,21 @@ snapshots:
       lightningcss: 1.29.1
       postcss: 8.5.1
       tailwindcss: 4.0.0
+
+  '@tanstack/eslint-plugin-query@5.64.2(eslint@9.19.0(jiti@2.4.2))(typescript@5.7.3)':
+    dependencies:
+      '@typescript-eslint/utils': 8.21.0(eslint@9.19.0(jiti@2.4.2))(typescript@5.7.3)
+      eslint: 9.19.0(jiti@2.4.2)
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
+
+  '@tanstack/query-core@5.64.2': {}
+
+  '@tanstack/react-query@5.64.2(react@19.0.0)':
+    dependencies:
+      '@tanstack/query-core': 5.64.2
+      react: 19.0.0
 
   '@testing-library/dom@10.4.0':
     dependencies:
