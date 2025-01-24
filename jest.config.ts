@@ -195,7 +195,7 @@ const config: Config = {
 
   // 테스트에 사용할 테스트 환경
   // https://jestjs.io/docs/configuration#testenvironment-string
-  testEnvironment: 'jsdom',
+  testEnvironment: 'jest-fixed-jsdom',
 
   // 테스트 환경에 전달될 옵션
   // https://jestjs.io/docs/configuration#testenvironmentoptions-object
