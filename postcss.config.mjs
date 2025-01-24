@@ -1,8 +1,7 @@
 // https://tailwindcss.com/docs/installation/using-postcss
 
-module.exports = {
+export default {
   plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
+    '@tailwindcss/postcss': {},
   },
 };
