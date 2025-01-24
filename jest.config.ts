@@ -199,7 +199,9 @@ const config: Config = {
 
   // 테스트 환경에 전달될 옵션
   // https://jestjs.io/docs/configuration#testenvironmentoptions-object
-  // testEnvironmentOptions: {},
+  testEnvironmentOptions: {
+    customExportConditions: [''],
+  },
 
   // 테스트 결과에 위치 필드 추가
   // https://jestjs.io/docs/configuration#testlocationinresults-boolean
