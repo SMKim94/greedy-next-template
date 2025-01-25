@@ -1,4 +1,5 @@
 import MSWMockProvider from './_components/MSWMockProvider';
+import QueryClientProviderWrapper from './_components/QueryClientProviderWrapper';
 import './globals.css';
 
 if (
@@ -17,7 +18,9 @@ const RootLayout = ({
   return (
     <html lang="ko">
       <body>
-        <MSWMockProvider>{children}</MSWMockProvider>
+        <MSWMockProvider>
+          <QueryClientProviderWrapper>{children}</QueryClientProviderWrapper>
+        </MSWMockProvider>
       </body>
     </html>
   );
